@@ -62,7 +62,6 @@ function isCollide(a,b){
 function endGame(){
     player.start=false;
     popup.innerHTML="<p> Game Over <br> Your Last Score Was "+(player.scores+1)+" <br> Press Here to Play Again";
-    player.scores=0;
     player.speed=5;
     popup.classList.remove("hide");
 
