@@ -62,6 +62,7 @@ function isCollide(a,b){
 function endGame(){
     player.start=false;
     popup.innerHTML="<p> Game Over <br> Your Last Score Was "+(player.scores+1)+" <br> Press Here to Play Again";
+    player.scores=0;
     popup.classList.remove("hide");
 
 
@@ -89,10 +90,8 @@ function start(){
     score.classList.remove("hide");
     popup.classList.add("hide");  // Hide popup
     gameboard.innerHTML="";
-    player.scores=0;
-
     player.start=true;   // Setting Player is ready
-    player.score =0; // Setting initial value of Score
+    player.scores =0; // Setting initial value of Score
     window.requestAnimationFrame(PlayGame);
 
     // Creating the road Lines
