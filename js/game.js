@@ -28,7 +28,7 @@ function PlayGame(){  // Playing Game
         if(keys.ArrowUp && player.y>(road.top+180)){ player.y-=player.speed}
         if(keys.ArrowDown && player.y<(road.bottom-85)){ player.y+=player.speed}
         if(keys.ArrowLeft && player.x>0){ player.x-=player.speed}
-        if(keys.ArrowRight && player.x <(road.width-50)){ player.x+=player.speed}
+        if(keys.ArrowRight && player.x <(road.width-55)){ player.x+=player.speed}
 
         car.style.top = player.y+"px";
         car.style.left=player.x+"px";
