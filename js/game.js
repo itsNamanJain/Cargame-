@@ -93,6 +93,7 @@ function start(){
     gameboard.innerHTML="";
     player.start=true;   // Setting Player is ready
     player.scores =0; // Setting initial value of Score
+    player.speed=5;
     window.requestAnimationFrame(PlayGame);
 
     // Creating the road Lines
