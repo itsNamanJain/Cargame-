@@ -89,6 +89,7 @@ function start(){
     score.classList.remove("hide");
     popup.classList.add("hide");  // Hide popup
     gameboard.innerHTML="";
+    player.scores=0;
 
     player.start=true;   // Setting Player is ready
     player.score =0; // Setting initial value of Score
